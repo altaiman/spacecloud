@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Space Cloud</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="static/js/separate-js/libs.js"></script>
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+        <svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;"
+        class="root-svg-symbols-element">
+            <symbol id="letsrock" viewBox="-33 353.4 63.6 13.9">
+                <path d="M-20 364.4c.7-2.2 1.3-3.6 2.1-5.7.3-.7.5-1.1.4-1.5-.1-.7-.6-.9-1-.3-.1.1-.1.2-.2.3-.3.4-.5.9-.8 1.4-.9 1.6-1.6 3.7-2.1 4.4-.6 1-1.5.8-1.8-.2-.7.5-1.5 0-1.5-.9 0-.8.2-1.8.3-2.6.1-1 .4-3.6.4-5 0-.2 0-.3-.1-.4-.2-.5-.6-.5-1.1-.2-.2.2-.4.5-.5.9-.2.6-.2 1.3-.3 2-.1.5-.8 4.6-1 4.9-.5 1.1-2.5-.8-3.9-1.2-1.6-.4-2.6.4-1.4 1.1.8.5 3.4 2.5 4 3.2.2.2.2.2.4.3.2.2.4.4.6.7 1.4 1.3 4 2 5.9 1 .4-.2.5-.3.8-.6.5-.6.6-1 .8-1.6zm27.4-3.1l.6-3.1c.9 0 2.4-.3 1.8 1.8-.5 1.4-1.4 1.3-2.4 1.3zm-3.3 5.6h2.1l.9-4c1.2-.1 1.2.7 1.4 1.5l.5 2.5h2l-.5-2.6c-.1-.6-.4-1.1-.6-1.4-.1-.1-.3-.2-.4-.3.3-.2.6-.3.9-.5.4-.3.8-.6 1.2-1.3.5-.9.7-2.2.3-3.2-.5-1-1.3-1.2-2.8-1.2h-4l-.3 1.6h1.1l-1.8 8.9zm19.7 0h1.9l.7-2.9c.8-.1.9.4 1 1.2l.3 1.7h1.9l-.3-1.3c-.3-1.2-.2-1.5-.9-2.2l2.2-3.2h-2c-.5.7-.9 1.5-1.4 2.2h-.6c0-.6 1-4.7 1.2-5.9h-3.1l-.3 1.6h1.1c-.1 1.5-1.7 8.1-1.7 8.8zm-35.2-2.7h-1.8l-.2 1.1h-1.4l1.8-8.8-3.3.1-.4 1.6h1.2l-1.8 8.7h5.3"
+                />
+                <path d="M13.5 364.9c-.1-.4-.1-.9.1-1.5.2-.7.7-1.8 1.5-1.5.7.2.7 2.1 0 3.1-.5.8-1.3.9-1.6-.1zm-.6 2.2c.2.1.4.1.6.1 1.7.2 2.6-.5 3.1-1.2.5-.6.6-1.1.8-1.9.3-1 .4-2.2-.2-3.1-.7-.9-2.1-1.2-3.4-.7-1 .4-1.8 1.3-2.2 2.5-.2.6-.3 1.3-.3 2 .2 1.2.7 1.9 1.6 2.3zm-21.7-3.6c.1-.7.5-1.5 1.1-1.7.5-.1.7.3.6.7 0 .2-.1.4-.3.6-.3.4-.8.4-1.4.4zm-1.6 3.1c1.1 1.3 3.3.4 4.3.1l-.3-1.4c-.9.3-2.1.9-2.5-.4 1.4.1 2.7-.3 3.4-1.6 1.8-3.1-2.6-4.2-4.5-1.7-.7.9-1 1.8-1 3 0-.1-.1 1 .6 2zm9.8-3.5c.3 1.1 1.9 1.3 2.1 1.8.4.9-1.4 1.1-2.4.3l-.7 1.4c.5.7 2.1.8 3.1.6 1.2-.3 1.9-1.2 2-2.4 0-.5-.1-.8-.6-1.3-.4-.4-.9-.5-1.3-.7-.2-.1-.3-.2-.3-.4 0-.5.4-.5 1-.4l-.1.7h1.4l.9-2.7H2.8l-.1.4c-.8-.1-1.8-.1-2.5.4.2-.1-1.1.9-.8 2.3zm19.5 3.6c.2.2.4.3.8.4.4.1 1 .2 1.4.1.3 0 .5-.1.8-.2.3-.1.5-.2.7-.3.1-.1.2-.1.4-.2l-.3-1.4c-.6.2-2.8 1.3-2.5-1.2.1-1.4.6-2.4 2.2-2.2l-.1.7h1.3l.9-2.7h-1.6l-.1.5c-1.9-.2-2.9.3-3.7 1.4-.7.9-1 2.1-.9 3.4 0 .7.2 1.3.7 1.7z"
+                />
+                <path d="M-4.9 366.9H-3l1-5.1h1.1l.5-1.6h-1.2l.4-2h-1.6l-.6 2h-1l-.3 1.6h.8zm-18.5-4.9c.4-.8.6-1.9.7-2.6.1-.7-.1-1-.8-1.1-.2 0-.4 0-.6.1-.3.2-.2.5-.3 1.1-.2 1.2-.5 2.5 0 2.9.5.6.8 0 1-.4zm1.5.7c.6-.9 1.3-2.6.9-3.1-.3-.4-1.1-.7-1.4 0-.2.5-.4 1.4-.5 1.9-.2.5-.4 1.2-.2 1.6.4.6 1 0 1.2-.4zm21.4-3.4H.8l1-2.8H.1z"
+                />
+            </symbol>
+            <symbol id="logotype" viewBox="0 0 598.8 86">
+                <path d="M44.5 66.4c-6.1 4.5-12.9 8.7-20.6 8.7-6.6 0-12.5-2.7-16.9-7-4.3-4.3-7-10.3-7-16.9 0-6.6 2.7-12.5 7-16.9 4.3-4.3 10.3-7 16.9-7V42c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3c4.5 0 10.7-4.7 14.5-7.7-1.2 1.2-2.4 2.2-3.4 3 1.6 2.6 3.5 5.1 5.6 7.2 1.2 1.1 2.5 2.3 3.9 3.3m46-5.9c3.6 0 6.8-1.4 9.1-3.8 2.3-2.3 3.8-5.6 3.8-9.1s-1.4-6.7-3.7-9c-2.4-2.4-5.7-3.9-9.3-4-10.2-.2-20.8 9.7-31.2 19.4-.9.9-1.9 1.8-2.9 2.6-4-2.1-7.8-7.1-8.7-11.8.6-.5 1.1-1 1.6-1.5C61.7 31.7 74.6 19.7 90.6 20c7.6.2 14.4 3.3 19.4 8.2 4.9 4.9 8 11.7 8 19.3 0 7.6-3.1 14.5-8.1 19.4-5 5-11.8 8.1-19.4 8.1-3.8 0-7.4-.8-10.6-2.1-3.4-1.4-6.4-3.5-9-6.1l10.4-10.2c1.2 1.2 2.5 2.2 4.2 2.9 1.6.7 3.3 1 5 1z"
+                />
+                <path class="st0" d="M96.1 9.1c.4-.3.6-.7.6-1.2 0-.7-.5-1.5-1.5-1.5h-1.8v4.1h1.1V9.2h.6l.7 1.3h1.1v-.2l-.8-1.2zm-1.6-.7v-1h.7c.3 0 .4.2.4.5s-.1.5-.4.5h-.7zm.4-8.4l2.5 4.8 5.6 1-3.8 3.8.8 5.6-4.8-2.5-5.2 2.5.8-5.3-3.9-4.1 5.4-.8 2.6-5zm223.2 50.7c-1.5-11.1-10.6-16.5-19.9-16.5-10.1 0-20.8 7-20.8 20.7 0 13.8 10.4 20.5 20.7 20.5 9.4 0 18.7-5.6 20.1-16.8H305c-1 3.4-3.7 5-6.5 4.9-3.6-.1-7.5-3-7.5-8.7s3.9-8.5 7.6-8.6c2.7 0 5.3 1.5 6.3 4.5h13.2zm15.5-.1c1-4 3.6-5.3 6.2-5.6 2.1 0 5.3.6 5.3 3.3.1 2.2-1.9 3.6-3.9 3.6-2.5.3-5.6-.4-7.6-1.3zm6-16.2c-10 .4-20.2 7.4-19.8 21.5.4 13.9 10 20.2 23.4 19.5 5.2-.2 9.7-.8 14.2-3.4l-.6-10.3c-2.8 1.5-8.1 2.8-12.7 3.1-5.5.2-10.1-1.4-11-6.6 3.2 1.5 7 2.3 10.9 2 7.1-.4 14.1-4.1 14.3-12.2.3-10.4-9.7-13.9-18.7-13.6zm-81 20.2c-.1 4.9-1.9 8.4-6 8.4-4.5.1-6.8-3.1-6.9-8.3.2-6.5 3.2-9.2 8.1-9.2 1.4 0 3.2.2 4.8.6v8.5zm-3.7-20c-13.3-.2-22.5 6.4-22.9 19.8 0 11.3 5.4 20.5 17.6 20.7 4.6 0 9.2-2.3 11.3-6.6v.5c0 7.5 9.5 6 14.4 4.9v-7.5c-3.5 0-3.3-1.4-3.3-4.5V38.2c-5.5-2.2-11.3-3.5-17.1-3.6zM209 46.4c4.5-.2 7 3.3 7 8.5 0 5.3-2.1 8.9-6.9 8.9-4.1 0-6.2-3.9-6.2-8.8 0-5.1 2-8.6 6.1-8.6zm-8.2-6c0-7.5-9.6-6.1-14.3-5v7.5c3.5 0 3.2 1.5 3.2 4.5V86h12.8V69.8c1.9 4 6.2 5.4 10.4 5.4 11.5 0 17-9.9 17-20.3 0-11.2-5.4-20.5-17.7-20.7-4.5 0-9.2 2.3-11.3 6.5v-.3zm-62.5 16.7c-.2 12.7 11.3 18.7 23.3 18.7 11.6 0 23.2-6.2 23.2-18.1 0-13.8-10.5-16.6-22.6-17.7-5.4-.6-8.7-1.5-8.7-5.3 0-4.3 4.4-5.2 7.7-5.2 4 0 7.6 1.6 7.7 5.5h13.9c.2-12.3-10.9-18.6-21.8-18.6-11.6 0-22 6.2-22 18.6 0 11.8 10.4 16 20.7 16.6 4.1.2 10.5.5 10.5 5.9 0 3.4-4.5 5.3-8.7 5.3-4.5 0-9-1.9-9-5.8h-14.2zm422.6 6c-4.6.1-6.9-3.3-6.9-8.6 0-5.2 2.1-8.9 6.6-8.9 4.1 0 6.4 3.9 6.4 8.8.1 4.9-1.8 8.7-6.1 8.7m8.3 6c0 7.5 9.5 6 14.4 4.9v-7.5c-3.5 0-3.3-1.4-3.3-4.5V22.8h-12.8v16.7c-1.9-4-6.2-5.3-10.4-5.3-11.4 0-17.1 9.9-16.9 20.3 0 11.3 5.4 20.5 17.6 20.7 4.6 0 9.2-2.3 11.3-6.6v.5zm-48.1-33.6v21.9c0 4.3-3 7-6.2 7-2.8 0-5.3-2-5.1-6.7V35.5h-13.9v22.1c0 9.8 2.8 17.5 14.4 17.5 4.5 0 9.2-2.3 11.2-6.4 0 8.7 11.4 7 16.7 5.7v-7.5c-3.2 0-3.2-1.2-3.2-3.8V35.5h-13.9zm-56.9 19.3c0-5.8 3.7-8.6 7.3-8.5 3.5.1 6.8 2.9 6.8 8.5s-3.3 8.5-7 8.5c-3.5.2-7.1-2.7-7.1-8.5zm27.8 0c0-13.7-10.3-20.5-20.6-20.6-10.5-.1-21 6.7-21 20.6 0 13.8 10.5 20.6 20.9 20.6 10.5.1 20.7-6.8 20.7-20.6zm-62.7-32v36c0 15.1 8.7 18.1 20.8 15.9l-.4-10.3c-4.1.6-6.8-.4-6.8-5.7V22.8h-13.6zm-59.6 23.5c0 19.1 14.5 28.8 29 28.8 12.1 0 24.6-6.4 26.8-22.5h-14.3c-1.5 6.2-6.4 9-12.6 9-8.7 0-14.2-7.2-14.2-15.4 0-9.4 5.6-15.6 14.2-15.6 6.1 0 10.4 2.3 12.4 8.1h14.3c-2.2-15.2-15-21.5-26.7-21.5-14.4.1-28.9 9.6-28.9 29.1z"
+                />
+                <path d="M65.2 75.3c-10.3 0-19.6-4.2-26.3-10.9-6.8-6.8-11-16.1-11-26.4C27.9 17.4 44.6.7 65.2.7c4.5 0 8.9.8 13 2.4.6.2 1.3.5 1.9.8v17c-2-1.8-4.4-3.2-6.9-4.1-2.4-.9-5.1-1.4-7.9-1.4-12.5 0-22.7 10.2-22.7 22.7 0 6.3 2.5 11.9 6.6 16s9.8 6.6 16 6.6c2.8 0 5.5-.5 7.9-1.4 2.5-1 4.9-2.4 6.9-4.1l9.5 11c-3.3 2.9-7.2 5.2-11.4 6.8-4 1.5-8.4 2.3-12.9 2.3zm529.1-58.8l1.1 1.8v.2h-1.6l-1-1.8h-.8v1.8h-1.5v-5.7h2.5c1.4 0 2 1 2 2 .2.7-.1 1.3-.7 1.7m-2.2-1h1c.4 0 .6-.4.6-.7 0-.4-.2-.7-.6-.7h-1v1.4zm4.9-4.1c-1.1-1.1-2.6-1.7-4.2-1.7s-3.1.7-4.2 1.7c-1.1 1.1-1.7 2.6-1.7 4.2s.7 3.1 1.7 4.2c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.7 4.2-1.7c1.1-1.1 1.7-2.6 1.7-4.2.1-1.6-.6-3.1-1.7-4.2z"
+                />
+            </symbol>
+        </svg>
+        <header class="page__header header header_idx">
+            <div class="header__inner">
+                <div class="logotype">
+                    <a class="logotype__link" href="index.html">
+                        <svg class="logotype__image" width="598.8px" height="86px">
+                            <use xlink:href="#logotype"></use>
+                        </svg>
+                    </a>
+                    <p class="logotype__text">Заоблачные технологии для вашего бизнеса
+                    </p>
+                </div>
+                <div class="header__contact"><a class="header__link header__link_phone" href="tel:+73852500007">+7 3852 <strong>50-00-07</strong></a><a class="header__link header__link_consult" href="#">Заказать консультацию</a>
+                </div>
+                <div class="header__main">
+                    <button class="btn btn_menu">Меню
+                    </button>
+                    <button class="btn">Войти
+                    </button>
+                    <button class="btn btn_reg" data-fancybox data-src="#reg">Стать клиентом
+                    </button>
+                </div>
+            </div>
+            <div class="header__sticky">
+                <div class="header__inner header__inner_sticky">
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="banner__inner">
+                <h2 class="banner__title">Недорогая 1С в облаке.<br>Без ограничений
+                                      </h2>
+                <p class="banner__text">Space Cloud — это 1С мечты. Пользуйтесь с любого устройства,
+                    <br>получайте поддержку 24//7 и не переплачивайте
+                    <br>за ненужные услуги.
+                </p>
+                <button class="btn btn_strong btn_banner">Дальше - больше
+                </button>
+            </div>
+            <div class="banner__video-wrap">
+                <video class="banner__video" autoplay loop>
+                    <source src="banner.mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="page__content">
+            <div class="section">
+                <div class="section__inner">
+                    <h2 class="section__title">Получить свою 1С — это быстрее, чем вам кажется
+                                                  </h2>
+                    <p class="section__text">Мы все привыкли к тому, что покупка и внедрение «Один Эс» — это долго.
+                        <br>У Space Cloud другое мнение:
+                    </p>
+                    <table class="section__tbl">
+                        <tr class="section__tbl-r">
+                            <td class="section__tbl-c"><span class="section__cap section__cap_pizza">Заказать пиццу</span>
+                            </td>
+                            <td class="section__tbl-c section__tbl-c_wp"><span class="progress" data-percent="100%">1 час</span>
+                            </td>
+                        </tr>
+                        <tr class="section__tbl-r">
+                            <td class="section__tbl-c"><span class="section__cap section__cap_coffe">Приготовить чашку кофе</span>
+                            </td>
+                            <td class="section__tbl-c section__tbl-c_wp"><span class="progress" data-percent="25%">5 минут</span>
+                            </td>
+                        </tr>
+                        <tr class="section__tbl-r">
+                            <td class="section__tbl-c"><span class="section__cap section__cap_1c">Получить свою 1С</span>
+                            </td>
+                            <td class="section__tbl-c section__tbl-c_wp"><span class="progress" data-percent="8%">1 минута</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <ul class="section__lst">
+                        <li class="section__lst-i"><span class="section__cap">Не нужен сервер</span>
+                            <p class="section__text section__text_adv">Вам не нужно искать и покупать серверное оборудование — вы берете его в аренду.
+                            </p>
+                        </li>
+                        <li class="section__lst-i"><span class="section__cap">Без долгой настройки</span>
+                            <p class="section__text section__text_adv">Программист не мучает вас вопросами — вы просто выбираете подходящий тариф.
+                            </p>
+                        </li>
+                        <li class="section__lst-i"><span class="section__cap">Только бизнес</span>
+                            <p class="section__text section__text_adv">Вы за минуту получаете 1С, которая вам нужна. И просто работаете дальше.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__footer">
+                    <div class="section__footer-inner">
+                        <div class="section__footer-c"><span class="section__cap section__cap_f">У меня уже есть 1С, как быть со всеми данными и настройками?</span>
+                            <p class="section__text section__text_f">
+                                <br>Вы можете перенести базы и все настройки в облако. И продолжить работу
+                                <br>с того места, где остановились.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__inner">
+                    <h2 class="section__title">Экономьте на 1С
+                                                  </h2>
+                    <p class="section__text">Покупка «коробочной» версии 1С — это всегда еще и сопряженные
+                        <br>расходы. Облачная 1С от Space Cloud — способ получить отличный сервис
+                        <br>и сэкономить на обслуживании.
+                    </p>
+                    <div class="economy">
+                        <h3 class="economy__title">За что вы платите в первый месяц?
+                                                          </h3>
+                        <ul class="economy__blocks">
+                            <li class="economy__block economy__block_sc">
+                                <div class="economy__content">
+                                    <h4 class="economy__cap">Space Cloud
+                                                                                        </h4>
+                                    <p class="economy__text">Аренда 1С <strong>700 Р</strong>
+                                    </p>
+                                    <p class="economy__advance">+ 15 дней бесплатно
+                                    </p>
+                                    <button class="btn btn_strong btn_bot">Попробовать
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="economy__block economy__block_box">
+                                <div class="economy__content">
+                                    <h4 class="economy__cap">1С в «коробке»
+                                                                                        </h4>
+                                    <ul class="economy__lst">
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">1C Бухгалтерия <strong>от 15 200 Р</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Доступ к обновлениям Покупка обновлений <strong>35 592 Р за годовой доступ</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Покупка сервера <strong>от 20 000 Р</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Покупка дополнительных лицензий ПО <strong>от 100 000 Р</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Обслуживание и амортизация сервера <strong>от 2000 Р</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Зарплата системного администратора <strong>от 15 000 Р</strong>
+                                            </p>
+                                        </li>
+                                        <li class="economy__lst-i">
+                                            <p class="economy__text">Зарплата программиста 1С-ника <strong>от 30 000 Р</strong>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="economy">
+                        <h3 class="economy__title">Экономия в первый год аренды
+                                                          </h3>
+                        <div class="economy__circle circle">
+                            <div class="circle__numbers"><span class="circle__numbers-v">14 350 000 Р</span><span class="circle__numbers-t">экономии в год, из них</span><span class="circle__numbers-v">от 700 Р</span><span class="circle__numbers-t">за комплексные услуги <br>в месяц</span>
+                            </div>
+                            <div class="circle__this">
+                            </div>
+                        </div>
+                        <div class="economy__for-users for-users">
+                            <p class="for-users__text">Также вы экономите не менее 1000 Р на каждом пользователе 1С — каждый последующий месяц
+                            </p>
+                            <div class="for-users__this">
+                                <svg id="donut-chart"></svg>
+                            </div>
+                        </div>
+                        <button class="btn btn_strong btn_ctr">Попробовать 15 дней бесплатно
+                        </button>
+                    </div>
+                </div>
+                <div class="section__footer">
+                    <div class="section__footer-inner">
+                        <div class="section__footer-c"><span class="section__cap section__cap_f">Но есть же базовая версия коробочной 1С, ей пользоваться выгоднее!</span>
+                            <p class="section__text section__text_f">
+                                <br>На самом деле, она подходит только микробизнесу на 1-2 человека. Бесплатная версия поддерживает
+                                <br>всего 2 базы — а этого в 99% будет недостаточно.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__inner">
+                    <h2 class="section__title">Одна облачная 1С для всех задач
+                                                  </h2>
+                    <p class="section__text">Бухгалтерский и управленческий учет, склад, логистика, финансы,
+                        <br>продажи или отчетность — в облачной 1С есть всё, что вам нужно.
+                    </p>
+                    <div class="section__content section__content_l"><span class="section__cap section__cap_multi">Хотите сдавать отчетность из 1С?<br>Включите «1С-Отчетность» <br>в списке сервисов.</span>
+                        <p class="section__text section__text_adv">Вы не переплачиваете за ненужные вам сервисы —
+                            <br>а включаете в личном кабинете только то,
+                            <br>что вам требуется.
+                        </p>
+                    </div>
+                    <div class="screen">
+                    </div>
+                    <h2 class="section__title">Space Cloud гарантирует
+                                                  </h2>
+                    <ul class="section__lst">
+                        <li class="section__lst-i section__lst-i_sup"><span class="section__cap">Команда поддержки 24/7</span>
+                            <p class="section__text section__text_adv">У нас собственный штат специалистов поддержки — вы получите решение в тот же день.
+                            </p>
+                        </li>
+                        <li class="section__lst-i section__lst-i_hard"><span class="section__cap">Диск без ограничений </span>
+                            <p class="section__text section__text_adv">Где другие сервисы дают 5 ГБ пространства на диске, <strong>мы даем 25 ГБ.</strong> Этого хватит этого хватит надолго.
+                            </p>
+                        </li>
+                        <li class="section__lst-i section__lst-i_qu"><span class="section__cap">Бесплатные <br>1С-консультации</span>
+                            <p class="section__text section__text_adv">Задавайте вопросы любой сложности — мы подскажем, как лучше поступить.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__footer">
+                    <div class="section__footer-inner">
+                        <div class="section__footer-c"><span class="section__cap section__cap_f">Меняем часы на дни.</span>
+                            <p class="section__text section__text_f">
+                                <br>Если 1С недоступна 1 час — в награду за ожидание вы получаете
+                                <br>1 день бесплатной работы. Всё по-честному.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__inner">
+                    <h2 class="section__title">Меняйте 1С под себя в 2 клика
+                                                  </h2>
+                    <p class="section__text">Бизнес растет, задачи меняются — меняйтесь вместе с ними. С облачной 1С
+                        <br>вы можете за минуту переключиться на другой тариф — и это бесплатно.
+                        <br>И это далеко не все преимущества!
+                    </p><span class="section__subtitle">Получите гибкую 1С, которой <br>нет у ваших конкурентов</span>
+                    <ul class="section__lst">
+                        <li class="section__lst-i section__lst-i_ref"><span class="section__cap">Гибкие обновления</span>
+                            <p class="section__text section__text_adv">Обновляйте программу в день выхода обновления автоматически или включите ручное управление.
+                            </p>
+                        </li>
+                        <li class="section__lst-i section__lst-i_option"><span class="section__cap">Новые функции на заказ</span>
+                            <p class="section__text section__text_adv">Обратитесь к нам, и мы допишем нужные вам уникальные функции. Не нужно постоянно «держать» при себе 1С-ника.
+                            </p>
+                        </li>
+                        <li class="section__lst-i section__lst-i_fast"><span class="section__cap">Быстрое внедрение</span>
+                            <p class="section__text section__text_adv">Обновления происходят на сервере и сразу становятся доступны всем пользователям 1С в вашей компании.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__footer">
+                    <div class="section__footer-inner">
+                        <div class="section__footer-c"><span class="section__cap section__cap_f">Сезонный бизнес? Меняйте количество пользователей <br>с доступом к 1С, когда это нужно. Добавляйте новых за секунды.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__inner">
+                    <div class="section__content section__content_safety">
+                        <h2 class="section__title">Работайте безопасно
+                                                            </h2>
+                        <p class="section__text">Защитите себя от потери данных и от неприятных последствий проверок. Играйте по правилам — выбирайте легальное программное обеспечение.
+                        </p>
+                        <ul class="section__lst section__lst_ftrs">
+                            <li class="section__lst-i section__lst-i_ftrs"><span class="section__cap section__cap_ftrs">Надежный дата-центр</span>
+                                <p class="section__text section__text_adv">Ваш физический сервер находится в хорошо охраняемом дата-центре с пропускной системой.
+                                </p>
+                            </li>
+                            <li class="section__lst-i section__lst-i_ftrs"><span class="section__cap section__cap_ftrs">Данные не пропадут</span>
+                                <p class="section__text section__text_adv">Раз в сутки изменения в базе данных сохраняются — даже если произошел сбой, вы всегда сможете загрузить актуальную версию.
+                                </p>
+                            </li>
+                            <li class="section__lst-i section__lst-i_ftrs"><span class="section__cap section__cap_ftrs">Систему учета <br>нельзя изъять</span>
+                                <p class="section__text section__text_adv">Физически сервер находится не на территории компании, а значит, проверка не сможет изъять оборудование и парализовать вашу работу.
+                                </p>
+                            </li>
+                            <li class="section__lst-i section__lst-i_ftrs"><span class="section__cap section__cap_ftrs">Полностью легальное ПО</span>
+                                <p class="section__text section__text_adv">Облачная версия 1C, как и всё остальное программное обеспечение — лицензионное. Вам не страшны проверки.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_tariffs">
+                <div class="section__inner">
+                    <h2 class="section__title">Тарифы и цены
+                                                  </h2>
+                    <div class="tariffs">
+                        <div class="tariffs__top">
+                            <label class="tariffs__count">
+                                <p class="tariffs__text">Количество пользователей
+                                </p><span class="tariffs__count-down"></span>
+                                <input class="tariffs__count-field" type="number" value="1" /><span class="tariffs__count-up"></span>
+                            </label>
+                            <label class="tariffs__check">
+                                <p class="tariffs__text tariffs__text_rent">Аренда MS Office 2010 Standart
+                                </p>
+                                <input class="tariffs__check-btn" type="checkbox" /><span class="tariffs__check-custom"></span>
+                            </label><a class="tariffs__link tariffs__link_more" href="#">Подробнее о тарифах</a>
+                        </div>
+                        <ul class="tariffs__lst">
+                            <li class="tarif tarif_mercury">
+                                <h4 class="tarif__cap">Меркурий
+                                                                              </h4>
+                                <ul class="tarif__ftrs">
+                                    <li class="tarif__ftrs-i">Управление малой фирмой
+                                    </li>
+                                    <li class="tarif__ftrs-i">Управление торговлей
+                                    </li>
+                                    <li class="tarif__ftrs-i">Бухгалтерия
+                                    </li>
+                                    <li class="tarif__ftrs-i">1С: отчетность
+                                    </li>
+                                </ul>
+                                <div class="tarif__bot"><span class="tarif__price">700Р</span>
+                                    <button class="btn btn_strong">Попробовать
+                                    </button>
+                                    <p class="tarif__text tarif__text_free">30 дней бесплатно
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tarif tarif_saturn">
+                                <h4 class="tarif__cap">Сатурн
+                                                                              </h4>
+                                <ul class="tarif__ftrs">
+                                    <li class="tarif__ftrs-i">Управление малой фирмой
+                                    </li>
+                                    <li class="tarif__ftrs-i">Управление торговлей
+                                    </li>
+                                    <li class="tarif__ftrs-i">Бухгалтерия
+                                    </li>
+                                    <li class="tarif__ftrs-i">1С: отчетность
+                                    </li>
+                                </ul>
+                                <div class="tarif__bot"><span class="tarif__price">1000Р</span>
+                                    <button class="btn btn_strong">Попробовать
+                                    </button>
+                                    <p class="tarif__text tarif__text_free">30 дней бесплатно
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tarif tarif_jupiter"><span class="tarif__action"></span>
+                                <h4 class="tarif__cap">Юпитер
+                                                                              </h4>
+                                <ul class="tarif__ftrs">
+                                    <li class="tarif__ftrs-i">Управление малой фирмой
+                                    </li>
+                                    <li class="tarif__ftrs-i">Управление торговлей
+                                    </li>
+                                    <li class="tarif__ftrs-i">Бухгалтерия
+                                    </li>
+                                    <li class="tarif__ftrs-i">1С: отчетность
+                                    </li>
+                                    <li class="tarif__ftrs-i">Документооборот
+                                    </li>
+                                    <li class="tarif__ftrs-i">Комплексная автоматизация CRM
+                                    </li>
+                                </ul>
+                                <div class="tarif__bot"><span class="tarif__price">1300Р</span>
+                                    <button class="btn btn_strong">Попробовать
+                                    </button>
+                                    <p class="tarif__text tarif__text_free">30 дней бесплатно
+                                    </p>
+                                </div>
+                            </li>
+                        </ul><a class="tariffs__link tariffs__link_help" href="#">Мне нужна помощь</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_clients">
+                <div class="section__inner">
+                    <h2 class="section__title">Клиенты о нас
+                                                  </h2>
+                    <ul class="clients">
+                        <li class="clients__say"><span class="clients__name">Михаил Гербер</span><span class="clients__company">ООО «Жемчужный калейдоскоп»</span>
+                            <p class="clients__text">
+                                Стабильно работаем, пока все 9 месяцев без сбоев. Подключили отчетность почти сразу, радует такая возможность. Удобно что обновления не нужно скачивать и напрягать программиста каждый раз. Одним словом нареканий нет!
+                            </p>
+                        </li>
+                        <li class="clients__say"><span class="clients__name">Татьяна Лыгина</span><span class="clients__company">ООО «Система»</span>
+                            <p class="clients__text">Очень приятно, что Space Cloud бесплатно предоставляет сразу 25 гигабайт для хранения данных, потому что традиционные 5-10, которые предлагает большинство таких сервисов — для быстрорастущей компании критично мало. Личный кабинет
+                                удобный, стоимость вполне адекватная даже для малого бизнеса.
+                            </p>
+                        </li>
+                        <li class="clients__say"><span class="clients__name">Виталий Макаров</span><span class="clients__company">ИП Макаров В.Н.</span>
+                            <p class="clients__text">Попробовал 15 дней, это оказалось очень удобно и разницы между облачной 1С и обычной лично я не вижу никакой. Продолжаем работать. Спасибо!
+                            </p>
+                        </li>
+                        <li class="clients__say"><span class="clients__name">Виталий Макаров</span><span class="clients__company">ИП Макаров В.Н.</span>
+                            <p class="clients__text">Попробовал 15 дней, это оказалось очень удобно и разницы между облачной 1С и обычной лично я не вижу никакой. Продолжаем работать. Спасибо!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page__buffer">
+            <div class="modal modal_reg" id="reg">
+                <div class="modal__inner">
+                    <h3 class="modal__title">Стать клиентом
+                                                </h3>
+                    <form class="form">
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="ФИО" type="text" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="E-mail" type="email" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Пароль" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Подтверждение пароля" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <div class="form__capcha">
+                        </div>
+                        <button class="btn btn_reg" type="submit">Зарегистрироваться
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="page__footer footer">
+            <div class="footer__inner">
+                <div class="logotype">
+                    <a class="logotype__link" href="index.html">
+                        <svg class="logotype__image" width="598.8px" height="86px">
+                            <use xlink:href="#logotype"></use>
+                        </svg>
+                    </a>
+                    <p class="logotype__text logotype__text_f">Заоблачные технологии
+                        <br>для вашего бизнеса
+                    </p>
+                </div>
+                <div class="footer__contact"><a class="footer__link footer__link_phone" href="tel:+73852500007">+7 3852 <strong>50-00-07</strong></a>
+                    <p class="footer__address">пр. Ленина, 195, Барнаул, 656000, Россия
+                    </p><span class="footer__copy">&copy;2017 SpaceCloud </span>
+                </div>
+                <div class="social">
+                    <a class="social__link social__link_vk" href="#"></a>
+                    <a class="social__link social__link_fb" href="#"></a>
+                    <a class="social__link social__link_tw" href="#"></a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
