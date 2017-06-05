@@ -204,14 +204,22 @@ $(function () {
 'use strict';
 
 $(function () {
-    function nextStep() {
+    function nextStep(e) {
+        e.preventDefault();
         var currentStep = $('.lk__step_active'),
             currentStepVal = $(currentStep).attr('data-step'),
             nextStep = $('[data-step="' + ++currentStepVal + '"]');
         $(currentStep).removeClass('lk__step_active');
         $(nextStep).addClass('lk__step_active');
+
         if ($('.level').css('display') === 'none') {
             $('.level').show();
+        }
+
+        if (currentStepVal === 1) {
+            $('.level__step').first().addClass('level__step_active');
+        } else {
+            $('.level__step_active').removeClass('level__step_active').next().addClass('level__step_active');
         }
     }
 
@@ -264,29 +272,4 @@ $(function () {
 
     tabWork();
     $('.tabs__item').on('click', tabWork);
-});
-'use strict';
-
-$(function () {
-    var counter = $('.tariffs__count-field');
-
-    $('.tariffs__count-up').on('click', function () {
-        var countVal = $(counter).val();
-
-        $(counter).val(++countVal);
-    });
-
-    $('.tariffs__count-down').on('click', function () {
-        var countVal = $(counter).val();
-
-        if (+countVal === 0) return;
-
-        $(counter).val(--countVal);
-    });
-
-    $(counter).on('change', function () {
-        if ($(counter).val()) {
-            $(counter).val(0);
-        }
-    });
 });
