@@ -7,6 +7,7 @@
         <title>Space Cloud</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
+        <meta name="viewport" content="width=1170">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
@@ -57,6 +58,18 @@
                 <div class="header__main">
                     <button class="btn btn_menu">Меню
                     </button>
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
                     <button class="btn">Войти
                     </button>
                     <button class="btn btn_reg" data-fancybox data-src="#reg">Стать клиентом
@@ -84,6 +97,22 @@
                                 </p>
                             </li>
                         </ul>
+                    </div>
+                    <div class="tariffs tariffs_pricing">
+                        <div class="tariffs__top">
+                            <label class="tariffs__count">
+                                <p class="tariffs__text">Количество пользователей
+                                </p><span class="tariffs__count-down"></span>
+                                <input class="tariffs__count-field" type="number" value="1" /><span class="tariffs__count-up"></span>
+                            </label>
+                            <label class="tariffs__check">
+                                <p class="tariffs__text tariffs__text_rent">Аренда MS Office 2010 Standart
+                                </p>
+                                <input class="tariffs__check-btn" type="checkbox" /><span class="tariffs__check-custom"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pricing">
                         <table class="pricing__tbl">
                             <tr class="pricing__tbl-r">
                                 <td class="pricing__tbl-c pricing__tbl-c_head"><span class="pricing__cap">Цена за:</span>
@@ -102,17 +131,20 @@
                                         </label>
                                     </div>
                                 </td>
-                                <td class="pricing__tbl-c pricing__tbl-c_tarif pricing__tbl-c_mercury"><span class="pricing__cap">Меркурий</span>
+                                <td class="pricing__tbl-c pricing__tbl-c_tarif">
+                                    <img class="pricing__img" src="static/img/assets/tarif/mercury.png" alt="" role="presentation" /><span class="pricing__cap">Меркурий</span>
                                     <p class="pricing__text pricing__text_t">Доступ к 1С
                                         <br>через браузер
                                         <br>или тонкий клиент
                                     </p><span class="pricing__price">700Р</span>
                                 </td>
-                                <td class="pricing__tbl-c pricing__tbl-c_tarif pricing__tbl-c_saturn"><span class="pricing__cap">Сатурн</span>
+                                <td class="pricing__tbl-c pricing__tbl-c_tarif">
+                                    <img class="pricing__img" src="static/img/assets/tarif/saturn.png" alt="" role="presentation" /><span class="pricing__cap">Сатурн</span>
                                     <p class="pricing__text pricing__text_t">Доступ к 1с через удаленный рабочий стол , браузер или тонкий клиент
                                     </p><span class="pricing__price">1000Р</span>
                                 </td>
-                                <td class="pricing__tbl-c pricing__tbl-c_tarif pricing__tbl-c_jupiter">
+                                <td class="pricing__tbl-c pricing__tbl-c_tarif">
+                                    <img class="pricing__img" src="static/img/assets/tarif/jupiter.png" alt="" role="presentation" />
                                     <div class="pricing__action">
                                     </div><span class="pricing__cap">Юпитер</span>
                                     <p class="pricing__text pricing__text_t">Доступ к 1с через удаленный рабочий стол , браузер или тонкий клиент

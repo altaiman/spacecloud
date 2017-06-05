@@ -7,6 +7,7 @@
         <title>Space Cloud</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
+        <meta name="viewport" content="width=1170">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
@@ -57,6 +58,18 @@
                 <div class="header__main">
                     <button class="btn btn_menu">Меню
                     </button>
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
                     <button class="btn">Войти
                     </button>
                     <button class="btn btn_reg" data-fancybox data-src="#reg">Стать клиентом
@@ -75,9 +88,7 @@
                 <p class="banner__text">Space Cloud — это 1С мечты. Пользуйтесь с любого устройства,
                     <br>получайте поддержку 24//7 и не переплачивайте
                     <br>за ненужные услуги.
-                </p>
-                <button class="btn btn_strong btn_banner">Дальше - больше
-                </button>
+                </p><a class="btn btn_strong btn_banner" href="#next">Дальше - больше</a>
             </div>
             <div class="banner__video-wrap">
                 <video class="banner__video" autoplay loop>
@@ -86,10 +97,10 @@
             </div>
         </div>
         <div class="page__content">
-            <div class="section">
+            <section class="section" id="next">
                 <div class="section__inner">
                     <h2 class="section__title">Получить свою 1С — это быстрее, чем вам кажется
-                                                  </h2>
+                                                </h2>
                     <p class="section__text">Мы все привыкли к тому, что покупка и внедрение «Один Эс» — это долго.
                         <br>У Space Cloud другое мнение:
                     </p>
@@ -138,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="section">
                 <div class="section__inner">
                     <h2 class="section__title">Экономьте на 1С
@@ -208,13 +219,41 @@
                             <div class="circle__numbers"><span class="circle__numbers-v">14 350 000 Р</span><span class="circle__numbers-t">экономии в год, из них</span><span class="circle__numbers-v">от 700 Р</span><span class="circle__numbers-t">за комплексные услуги <br>в месяц</span>
                             </div>
                             <div class="circle__this">
+                                <svg id="donut-chart"></svg>
+                            </div>
+                            <div class="circle__legend legend">
+                                <ul class="legend__list">
+                                    <li class="legend__point" data-index="0">
+                                        <div class="legend__ill">
+                                        </div>
+                                        <p class="legend__text">Экономия на ПП 1С
+                                        </p>
+                                    </li>
+                                    <li class="legend__point" data-index="3">
+                                        <div class="legend__ill">
+                                        </div>
+                                        <p class="legend__text">Экономия на сервере
+                                        </p>
+                                    </li>
+                                    <li class="legend__point" data-index="1">
+                                        <div class="legend__ill">
+                                        </div>
+                                        <p class="legend__text">Экономия на ПО Microsoft
+                                        </p>
+                                    </li>
+                                    <li class="legend__point" data-index="2">
+                                        <div class="legend__ill">
+                                        </div>
+                                        <p class="legend__text">Экономия на администраторе и сопровождении
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="economy__for-users for-users">
                             <p class="for-users__text">Также вы экономите не менее 1000 Р на каждом пользователе 1С — каждый последующий месяц
                             </p>
                             <div class="for-users__this">
-                                <svg id="donut-chart"></svg>
                             </div>
                         </div>
                         <button class="btn btn_strong btn_ctr">Попробовать 15 дней бесплатно
@@ -348,10 +387,11 @@
                                 <p class="tariffs__text tariffs__text_rent">Аренда MS Office 2010 Standart
                                 </p>
                                 <input class="tariffs__check-btn" type="checkbox" /><span class="tariffs__check-custom"></span>
-                            </label><a class="tariffs__link tariffs__link_more" href="#">Подробнее о тарифах</a>
+                            </label><a class="tariffs__link tariffs__link_more" href="tariffs.html">Подробнее о тарифах</a>
                         </div>
                         <ul class="tariffs__lst">
-                            <li class="tarif tarif_mercury">
+                            <li class="tarif">
+                                <img class="tarif__img" src="static/img/assets/tarif/mercury.png" alt="" role="presentation" />
                                 <h4 class="tarif__cap">Меркурий
                                                                               </h4>
                                 <ul class="tarif__ftrs">
@@ -371,7 +411,8 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="tarif tarif_saturn">
+                            <li class="tarif">
+                                <img class="tarif__img" src="static/img/assets/tarif/saturn.png" alt="" role="presentation" />
                                 <h4 class="tarif__cap">Сатурн
                                                                               </h4>
                                 <ul class="tarif__ftrs">
@@ -391,7 +432,8 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="tarif tarif_jupiter"><span class="tarif__action"></span>
+                            <li class="tarif">
+                                <img class="tarif__img" src="static/img/assets/tarif/jupiter.png" alt="" role="presentation" /><span class="tarif__action"></span>
                                 <h4 class="tarif__cap">Юпитер
                                                                               </h4>
                                 <ul class="tarif__ftrs">
