@@ -95,6 +95,8 @@
                     <source src="banner.mp4" />
                 </video>
             </div>
+            <button class="pause">
+            </button>
         </div>
         <div class="page__content">
             <section class="section" id="next">
@@ -139,33 +141,31 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section__footer">
+                <div class="section__footer section__footer_f1">
                     <div class="section__footer-inner">
-                        <div class="section__footer-c"><span class="section__cap section__cap_f">У меня уже есть 1С, как быть со всеми данными и настройками?</span>
-                            <p class="section__text section__text_f">
-                                <br>Вы можете перенести базы и все настройки в облако. И продолжить работу
-                                <br>с того места, где остановились.
-                            </p>
+                        <div class="section__text-white-bg"><strong>У меня уже есть 1С, как быть со всеми данными и настройками?</strong>
+                            <p>Вы можете перенести базы и все настройки в облако. И продолжить работу
+                                <br>с того места, где остановились.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="section">
+            <section class="section" id="economy">
                 <div class="section__inner">
                     <h2 class="section__title">Экономьте на 1С
-                                                  </h2>
+                                                </h2>
                     <p class="section__text">Покупка «коробочной» версии 1С — это всегда еще и сопряженные
                         <br>расходы. Облачная 1С от Space Cloud — способ получить отличный сервис
                         <br>и сэкономить на обслуживании.
                     </p>
                     <div class="economy">
                         <h3 class="economy__title">За что вы платите в первый месяц?
-                                                          </h3>
+                                                        </h3>
                         <ul class="economy__blocks">
                             <li class="economy__block economy__block_sc">
                                 <div class="economy__content">
                                     <h4 class="economy__cap">Space Cloud
-                                                                                        </h4>
+                                                                                      </h4>
                                     <p class="economy__text">Аренда 1С <strong>700 Р</strong>
                                     </p>
                                     <p class="economy__advance">+ 15 дней бесплатно
@@ -177,7 +177,7 @@
                             <li class="economy__block economy__block_box">
                                 <div class="economy__content">
                                     <h4 class="economy__cap">1С в «коробке»
-                                                                                        </h4>
+                                                                                      </h4>
                                     <ul class="economy__lst">
                                         <li class="economy__lst-i">
                                             <p class="economy__text">1C Бухгалтерия <strong>от 15 200 Р</strong>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="economy">
                         <h3 class="economy__title">Экономия в первый год аренды
-                                                          </h3>
+                                                        </h3>
                         <div class="economy__circle circle">
                             <div class="circle__numbers"><span class="circle__numbers-v">14 350 000 Р</span><span class="circle__numbers-t">экономии в год, из них</span><span class="circle__numbers-v">от 700 Р</span><span class="circle__numbers-t">за комплексные услуги <br>в месяц</span>
                             </div>
@@ -254,24 +254,49 @@
                             <p class="for-users__text">Также вы экономите не менее 1000 Р на каждом пользователе 1С — каждый последующий месяц
                             </p>
                             <div class="for-users__this">
+                                <ul class="for-users__list">
+                                    <li class="for-users__item">
+                                        <div class="progress progress_users" data-percent="9%">
+                                        </div>
+                                        <div class="progress progress_users" data-percent="32%">
+                                        </div>
+                                    </li>
+                                    <li class="for-users__item">
+                                        <div class="progress progress_users" data-percent="14%">
+                                        </div>
+                                        <div class="progress progress_users" data-percent="50%">
+                                        </div>
+                                    </li>
+                                    <li class="for-users__item">
+                                        <div class="progress progress_users" data-percent="25%">
+                                        </div>
+                                        <div class="progress progress_users" data-percent="78%">
+                                        </div>
+                                    </li>
+                                    <li class="for-users__item">
+                                        <div class="progress progress_users" data-percent="32%">
+                                        </div>
+                                        <div class="progress progress_users" data-percent="100%">
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <button class="btn btn_strong btn_ctr">Попробовать 15 дней бесплатно
                         </button>
                     </div>
                 </div>
-                <div class="section__footer">
+                <div class="section__footer section__footer_f2">
                     <div class="section__footer-inner">
-                        <div class="section__footer-c"><span class="section__cap section__cap_f">Но есть же базовая версия коробочной 1С, ей пользоваться выгоднее!</span>
-                            <p class="section__text section__text_f">
-                                <br>На самом деле, она подходит только микробизнесу на 1-2 человека. Бесплатная версия поддерживает
-                                <br>всего 2 базы — а этого в 99% будет недостаточно.
-                            </p>
+                        <div class="section__text-white-bg"><strong>   Но есть же базовая версия коробочной 1С, ей пользоваться выгоднее!   </strong>
+                            <br>
+                            <p>На самом деле, она подходит только микробизнесу на 1-2 человека. Бесплатная версия поддерживает
+                                <br>всего 2 базы — а этого в 99% будет недостаточно.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section">
+            </section>
+            <section class="section">
                 <div class="section__inner">
                     <h2 class="section__title">Одна облачная 1С для всех задач
                                                   </h2>
@@ -303,18 +328,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section__footer">
+                <div class="section__footer section__footer_f3">
                     <div class="section__footer-inner">
-                        <div class="section__footer-c"><span class="section__cap section__cap_f">Меняем часы на дни.</span>
-                            <p class="section__text section__text_f">
-                                <br>Если 1С недоступна 1 час — в награду за ожидание вы получаете
-                                <br>1 день бесплатной работы. Всё по-честному.
-                            </p>
+                        <div class="section__text-white-bg"><strong>Меняем часы на дни.</strong>
+                            <p>Если 1С недоступна 1 час — в награду за ожидание вы получаете
+                                <br>1 день бесплатной работы. Всё по-честному.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section">
+            </section>
+            <section class="section">
                 <div class="section__inner">
                     <h2 class="section__title">Меняйте 1С под себя в 2 клика
                                                   </h2>
@@ -337,14 +360,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section__footer">
+                <div class="section__footer section__footer_f4">
                     <div class="section__footer-inner">
-                        <div class="section__footer-c"><span class="section__cap section__cap_f">Сезонный бизнес? Меняйте количество пользователей <br>с доступом к 1С, когда это нужно. Добавляйте новых за секунды.</span>
+                        <div class="section__text-white-bg"><strong>Сезонный бизнес? Меняйте количество пользователей</strong><strong>с доступом к 1С, когда это нужно. Добавляйте новых за секунды.</strong>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section">
+            </section>
+            <section class="section">
                 <div class="section__inner">
                     <div class="section__content section__content_safety">
                         <h2 class="section__title">Работайте безопасно
@@ -371,8 +394,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="section section_tariffs">
+            </section>
+            <section class="section section_tariffs">
                 <div class="section__inner">
                     <h2 class="section__title">Тарифы и цены
                                                   </h2>
@@ -381,12 +404,12 @@
                             <label class="tariffs__count">
                                 <p class="tariffs__text">Количество пользователей
                                 </p><span class="tariffs__count-down"></span>
-                                <input class="tariffs__count-field" type="number" value="1" /><span class="tariffs__count-up"></span>
+                                <input class="tariffs__count-field" type="number" value="1" disabled="disabled" /><span class="tariffs__count-up"></span>
                             </label>
-                            <label class="tariffs__check">
-                                <p class="tariffs__text tariffs__text_rent">Аренда MS Office 2010 Standart
+                            <label class="rad">
+                                <p class="rad__text rad__text_rent">Аренда MS Office 2010 Standart
                                 </p>
-                                <input class="tariffs__check-btn" type="checkbox" /><span class="tariffs__check-custom"></span>
+                                <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
                             </label><a class="tariffs__link tariffs__link_more" href="tariffs.html">Подробнее о тарифах</a>
                         </div>
                         <ul class="tariffs__lst">
@@ -460,8 +483,8 @@
                         </ul><a class="tariffs__link tariffs__link_help" href="#">Мне нужна помощь</a>
                     </div>
                 </div>
-            </div>
-            <div class="section section_clients">
+            </section>
+            <section class="section section_clients">
                 <div class="section__inner">
                     <h2 class="section__title">Клиенты о нас
                                                   </h2>
@@ -486,7 +509,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="page__buffer">
             <div class="modal modal_reg" id="reg">

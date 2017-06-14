@@ -93,8 +93,14 @@
                                     </div>
                                 </div>
                                 <div class="user__c">
-                                    <h3 class="user__name">Михаил Иванов
-                                                                                    </h3><span class="user__contract">договор No 256349</span>
+                                    <div class="user__info">
+                                        <h3 class="user__name">Михаил Иванов
+                                                                                              </h3>
+                                        <button class="user__edit">
+                                        </button>
+                                    </div>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,14 +129,37 @@
                             </aside>
                             <div class="lk__section">
                                 <div class="lk__content">
-                                    <h2 class="lk__title">Обновление баз 1С
-                                                                                        </h2>
-                                    <p class="lk__text lk__text_q">Обновление баз 1с доступно только при оплаченном тарифе
-                                    </p>
+                                    <div class="lk__block">
+                                        <h2 class="lk__title">Обновление баз 1С
+                                                                                                  </h2>
+                                        <p class="lk__text lk__text_q">Обновление баз 1с доступно только при оплаченном тарифе
+                                        </p>
+                                    </div>
+                                    <div class="lk__block lk__block_config">
+                                        <h3 class="lk__subtitle">Подключенные конфигурации:
+                                                                                                  </h3>
+                                        <ul class="lk__list lk__list_config">
+                                            <li class="lk__item lk__item_config lk__item_active">1С: Управление небольщой фирмой 8<a class="lk__link lk__link_config" href="#">Обновить</a>
+                                            </li>
+                                            <li class="lk__item lk__item_config">1С: Бухгалтерия 8 ПРОФ 3.0<a class="lk__link lk__link_config" href="#">Обновить</a>
+                                            </li>
+                                            <li class="lk__item lk__item_config">1С: Управление небольшой фирмой 8<a class="lk__link lk__link_config" href="#">Обновить</a>
+                                            </li>
+                                            <li class="lk__item lk__item_config">1С: Управление небольщой фирмой 8<a class="lk__link lk__link_config" href="#">Обновить</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="lk__block">
+                                        <p class="lk__text lk__text_warn">Внимание! Если у вас настроен обмен между базами 1С, то после обновления может потребоваться дополнительная настройка планов обмена. Если после обновления у вас возникли проблемы с обменом, сообщите нам и наши специалисты
+                                            обязательно вам помогут.
+                                        </p>
+                                        <button class="lk__btn btn btn_reg btn_wide" data-fancybox data-src="#update">Создать обращение
+                                        </button>
+                                    </div>
                                 </div>
                                 <div class="lk__adv">
                                     <div class="account"><span class="account__title">Лицевой счет</span><span class="account__balance">200000Р</span>
-                                        <button class="btn btn_reg" data-fancybox data-src="#reg">Пополнить
+                                        <button class="account__btn btn btn_reg">Пополнить
                                         </button>
                                     </div>
                                     <div class="ads">
@@ -146,6 +175,55 @@
             </section>
         </div>
         <div class="page__buffer">
+            <div class="modal modal_reg" id="reg">
+                <div class="modal__inner">
+                    <h3 class="modal__title">Стать клиентом
+                                                </h3>
+                    <form class="form">
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="ФИО" type="text" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="E-mail" type="email" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Пароль" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Подтверждение пароля" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <div class="form__capcha">
+                        </div>
+                        <button class="btn btn_reg" type="submit">Зарегистрироваться
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal modal_update" id="update">
+                <div class="modal__inner">
+                    <h3 class="modal__title">Обновление баз 1С
+                                                </h3>
+                    <form class="form">
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Укажите путь до базы" type="text" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Логин базы 1С" type="text" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Пароль базы 1С" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <button class="btn btn_reg">Тест
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
         <footer class="page__footer footer">
             <div class="footer__inner">

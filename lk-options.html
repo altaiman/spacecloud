@@ -93,8 +93,14 @@
                                     </div>
                                 </div>
                                 <div class="user__c">
-                                    <h3 class="user__name">Михаил Иванов
-                                                                                    </h3><span class="user__contract">договор No 256349</span>
+                                    <div class="user__info">
+                                        <h3 class="user__name">Михаил Иванов
+                                                                                              </h3>
+                                        <button class="user__edit">
+                                        </button>
+                                    </div>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +194,7 @@
                                 </div>
                                 <div class="lk__adv">
                                     <div class="account"><span class="account__title">Лицевой счет</span><span class="account__balance">200000Р</span>
-                                        <button class="btn btn_reg" data-fancybox data-src="#reg">Пополнить
+                                        <button class="account__btn btn btn_reg">Пополнить
                                         </button>
                                     </div>
                                     <div class="ads">
@@ -204,6 +210,34 @@
             </section>
         </div>
         <div class="page__buffer">
+            <div class="modal modal_reg" id="reg">
+                <div class="modal__inner">
+                    <h3 class="modal__title">Стать клиентом
+                                                </h3>
+                    <form class="form">
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="ФИО" type="text" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="E-mail" type="email" />
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Пароль" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <label class="form__lab">
+                            <input class="form__field" placeholder="Подтверждение пароля" type="password" />
+                            <button class="form__field-show">
+                            </button>
+                        </label>
+                        <div class="form__capcha">
+                        </div>
+                        <button class="btn btn_reg" type="submit">Зарегистрироваться
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
         <footer class="page__footer footer">
             <div class="footer__inner">

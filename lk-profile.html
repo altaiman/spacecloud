@@ -129,98 +129,97 @@
                             </aside>
                             <div class="lk__section">
                                 <div class="lk__content">
-                                    <h2 class="lk__title">Оплата
-                                                                                        </h2>
-                                    <div class="lk__level level">
-                                        <ul class="level__steps">
-                                            <li class="level__step"><span class="level__step-i"></span>
-                                                <p class="level__text"><strong>Шаг 1:</strong> Выберите тип плательщика
-                                                </p>
-                                            </li>
-                                            <li class="level__step"><span class="level__step-i"></span>
-                                                <p class="level__text"><strong>Шаг 2:</strong> Заполните реквизиты
-                                                </p>
-                                            </li>
-                                            <li class="level__step"><span class="level__step-i"></span>
-                                                <p class="level__text"><strong>Шаг 3:</strong> Выберите платежную систему
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="lk__step lk__step_active" data-step="0">
-                                        <label class="field">
-                                            <input class="field__inp" type="number" placeholder="Введите сумму" data-type="pay" />
-                                        </label>
-                                        <button class="lk__btn btn btn_reg btn_wide" data-action="next">Далее
-                                        </button>
-                                    </div>
-                                    <div class="lk__step" data-step="1">
-                                        <button class="btn btn_reg btn_wide" data-action="next">Физическое лицо
-                                        </button>
-                                        <button class="btn btn_reg btn_wide" data-action="next">Юридическое лицо
-                                        </button>
-                                    </div>
-                                    <div class="lk__step" data-step="2">
-                                        <form class="form">
-                                            <div class="form__columns">
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="ФИО" type="text" />
+                                    <div class="lk__block">
+                                        <h2 class="lk__title">Мой профиль
+                                                                                                  </h2>
+                                        <div class="toggle toggle_open"><span class="toggle__name">Реквизиты</span>
+                                            <div class="toggle__content">
+                                                <label class="rad rad_profile">
+                                                    <p class="rad__text rad__text_profile">Физ.лицо
+                                                    </p>
+                                                    <input class="rad__btn" type="checkbox" checked="checked" /><span class="rad__custom rad__custom_profile"></span>
+                                                    <p class="rad__text rad__text_profile">Юр.лицо
+                                                    </p>
                                                 </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Телефон" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="E-mail" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Название компании" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="ИНН" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="КПП" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="ОГРН" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Юридический адрес" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Почтовый адрес" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Корреспондентский счет" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Рассчетный счет" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Наименование банка" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="БИК" type="text" />
-                                                </label>
+                                                <form class="form">
+                                                    <div class="form__columns">
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Наименование компании" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Рабочий телефон" type="text" />
+                                                        </label>
+                                                        <label class="form__lab form__lab_select">
+                                                            <select class="form__select">
+                                                                <option>Страна</option>
+                                                            </select>
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="КПП" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Юридический адрес" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Расчетный счет" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Наименование банка" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Дополнительные заметки" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Должность" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Факс" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="ИНН" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="ОГРН" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Почтовый адрес" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="Корреспондентский счет" type="text" />
+                                                        </label>
+                                                        <label class="form__lab">
+                                                            <input class="form__field" placeholder="БИК" type="text" />
+                                                        </label>
+                                                    </div>
+                                                </form>
                                             </div>
-                                        </form>
-                                        <button class="lk__btn btn btn_reg btn_wide" data-action="next">Далее
-                                        </button>
+                                        </div>
+                                        <div class="toggle"><span class="toggle__name">Сменить пароль</span>
+                                            <div class="toggle__content">
+                                            </div>
+                                        </div>
+                                        <div class="toggle"><span class="toggle__name">Мои услуги</span>
+                                            <div class="toggle__content">
+                                                <ul class="toggle__list">
+                                                    <li class="toggle__list-item">Название услуги №1
+                                                    </li>
+                                                    <li class="toggle__list-item">Название услуги №1
+                                                    </li>
+                                                    <li class="toggle__list-item">Название услуги №1
+                                                    </li>
+                                                </ul>
+                                                <div class="toggle__links"><a class="toggle__link toggle__link_add" href="#">Добавить</a><a class="toggle__link toggle__link_settings" href="#">Управление</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="lk__step" data-step="3">
-                                        <h3 class="lk__subtitle">Выберите способ оплаты:
-                                                                                                  </h3>
-                                        <label class="radio">
-                                            <input class="radio__inp" type="radio" value="0" name="payment" checked="checked" /><span class="radio__check"></span><span class="radio__name">Карта</span>
-                                        </label>
-                                        <label class="radio">
-                                            <input class="radio__inp" type="radio" value="1" name="payment" /><span class="radio__check"></span><span class="radio__name">WebMoney</span>
-                                        </label>
-                                        <label class="radio">
-                                            <input class="radio__inp" type="radio" value="2" name="payment" /><span class="radio__check"></span><span class="radio__name">Сбербанк</span>
-                                        </label>
-                                        <button class="lk__btn btn btn_reg btn_wide" data-fancybox data-src="#thanks">Оплатить
-                                        </button>
+                                    <div class="lk__block lk__block_bot">
+                                        <div class="lk__cell"><a class="lk__link lk__link_dog" href="#">Договор оферты</a><a class="lk__link lk__link_partners" href="#">Партнерское соглашение</a>
+                                        </div>
+                                        <div class="lk__cell lk__cell_btn">
+                                            <button class="btn btn_reg btn_wide">Сохранить
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="lk__adv">
@@ -267,12 +266,6 @@
                         <button class="btn btn_reg" type="submit">Зарегистрироваться
                         </button>
                     </form>
-                </div>
-            </div>
-            <div class="modal modal_thanks" id="thanks">
-                <div class="modal__inner">
-                    <h3 class="modal__title modal__title_thanks">Спасибо, в ближайшее время мы свяжемся с вами
-                                                </h3>
                 </div>
             </div>
         </div>
