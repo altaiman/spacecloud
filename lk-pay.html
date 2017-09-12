@@ -7,7 +7,7 @@
         <title>Space Cloud</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <meta name="viewport" content="width=1170">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
@@ -15,6 +15,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="static/js/separate-js/libs.js"></script>
         <script>
@@ -60,13 +61,13 @@
                     </button>
                     <div class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            <li class="menu__item"><a class="menu__link" href="#economy">Экономия</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            <li class="menu__item"><a class="menu__link" href="#safety">Безопасность</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            <li class="menu__item"><a class="menu__link" href="#tariffs">Тарифы</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a>
                             </li>
                         </ul>
                     </div>
@@ -95,35 +96,59 @@
                                 <div class="user__c">
                                     <div class="user__info">
                                         <h3 class="user__name">Михаил Иванов
-                                                                                              </h3>
-                                        <button class="user__edit">
+                                                                                                </h3>
+                                        <button class="edit">
                                         </button>
                                     </div>
-                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><span class="user__link">mikhailivanov@gmail.com</span>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="lk__info account">
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Ваш тариф:
+                                    </p>
+                                    <p class="account__cap account__cap_val"> <a class="account__link" href="#">Сатурн</a>
+                                        <button class="edit edit_s">
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Стоимость:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">1560 ₽/мес</a>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Активен до:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">2 апреля 2017г.</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lk__main">
                             <aside class="sidebar">
                                 <ul class="sidebar__list">
-                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="#">Обзор</a>
+                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="lk-total.html">Обзор</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="#">Пользователи</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="lk-profile.html">Мой профиль</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="#">Мой профиль</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="lk-finance.html">Финансы</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="#">Финансы</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="lk-users.html">Пользователи</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="#">Техподдержка</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление конфигурациями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="#">Обновление баз</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление опциями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="#">Управление опциями</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="lk-update.html">Обновление баз</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="#">Партнерам</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="lk-report.html">1С Отчетность</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="#">1С Отчетность</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="lk-support.html">Техподдержка</a>
+                                    </li>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="lk-partners.html">Партнерам</a>
                                     </li>
                                 </ul>
                             </aside>
@@ -155,12 +180,12 @@
                                         </button>
                                     </div>
                                     <div class="lk__step" data-step="1">
-                                        <button class="btn btn_reg btn_wide" data-action="next">Физическое лицо
+                                        <button class="btn btn_reg btn_wide" data-action="next" data-type="0">Физическое лицо
                                         </button>
-                                        <button class="btn btn_reg btn_wide" data-action="next">Юридическое лицо
+                                        <button class="btn btn_reg btn_wide" data-action="next" data-type="1">Юридическое лицо
                                         </button>
                                     </div>
-                                    <div class="lk__step" data-step="2">
+                                    <div class="lk__step" data-step="2" data-type="0">
                                         <form class="form">
                                             <div class="form__columns">
                                                 <label class="form__lab">
@@ -173,8 +198,53 @@
                                                     <input class="form__field" placeholder="E-mail" type="text" />
                                                 </label>
                                                 <label class="form__lab">
-                                                    <input class="form__field" placeholder="Название компании" type="text" />
+                                                    <input class="form__field" placeholder="Должность" type="text" />
                                                 </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Дата рождения" type="text" />
+                                                </label>
+                                            </div>
+                                        </form>
+                                        <button class="lk__btn btn btn_reg btn_wide" data-action="next">Далее
+                                        </button>
+                                    </div>
+                                    <div class="lk__step" data-step="2" data-type="1">
+                                        <form class="form">
+                                            <fieldset class="form__fieldset">
+                                                <legend>Общее
+                                                </legend>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Наименование" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Контактный телефон" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Юридический адрес" type="text" />
+                                                </label>
+                                            </fieldset>
+                                            <fieldset class="form__fieldset">
+                                                <legend>Ответственное лицо
+                                                </legend>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="ФИО" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Телефон" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="E-mail" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Должность" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Дата рождения" type="text" />
+                                                </label>
+                                            </fieldset>
+                                            <fieldset class="form__fieldset">
+                                                <legend>Отчетность и закрывающие документы
+                                                </legend>
                                                 <label class="form__lab">
                                                     <input class="form__field" placeholder="ИНН" type="text" />
                                                 </label>
@@ -185,39 +255,58 @@
                                                     <input class="form__field" placeholder="ОГРН" type="text" />
                                                 </label>
                                                 <label class="form__lab">
-                                                    <input class="form__field" placeholder="Юридический адрес" type="text" />
+                                                    <input class="form__field" placeholder="Адрес для корреспонденции" type="text" />
                                                 </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Почтовый адрес" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Корреспондентский счет" type="text" />
-                                                </label>
-                                                <label class="form__lab">
-                                                    <input class="form__field" placeholder="Рассчетный счет" type="text" />
-                                                </label>
+                                            </fieldset>
+                                            <fieldset class="form__fieldset">
+                                                <legend>Банк
+                                                </legend>
                                                 <label class="form__lab">
                                                     <input class="form__field" placeholder="Наименование банка" type="text" />
                                                 </label>
                                                 <label class="form__lab">
                                                     <input class="form__field" placeholder="БИК" type="text" />
                                                 </label>
-                                            </div>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Расчетный счет" type="text" />
+                                                </label>
+                                                <label class="form__lab">
+                                                    <input class="form__field" placeholder="Корреспондентский счет" type="text" />
+                                                </label>
+                                            </fieldset>
                                         </form>
                                         <button class="lk__btn btn btn_reg btn_wide" data-action="next">Далее
                                         </button>
                                     </div>
-                                    <div class="lk__step" data-step="3">
+                                    <div class="lk__step" data-step="3" data-type="0">
                                         <h3 class="lk__subtitle">Выберите способ оплаты:
                                                                                                   </h3>
                                         <label class="radio">
-                                            <input class="radio__inp" type="radio" value="0" name="payment" checked="checked" /><span class="radio__check"></span><span class="radio__name">Карта</span>
+                                            <input class="radio__inp" type="radio" value="0" name="payment" checked="checked" /><span class="radio__check"></span><span class="radio__name">Яндекс.Деньги</span>
                                         </label>
                                         <label class="radio">
                                             <input class="radio__inp" type="radio" value="1" name="payment" /><span class="radio__check"></span><span class="radio__name">WebMoney</span>
                                         </label>
                                         <label class="radio">
-                                            <input class="radio__inp" type="radio" value="2" name="payment" /><span class="radio__check"></span><span class="radio__name">Сбербанк</span>
+                                            <input class="radio__inp" type="radio" value="2" name="payment" /><span class="radio__check"></span><span class="radio__name">Карта</span>
+                                        </label>
+                                        <button class="lk__btn btn btn_reg btn_wide" data-fancybox data-src="#thanks">Оплатить
+                                        </button>
+                                    </div>
+                                    <div class="lk__step" data-step="3" data-type="1">
+                                        <h3 class="lk__subtitle">Выберите способ оплаты:
+                                                                                                  </h3>
+                                        <label class="radio">
+                                            <input class="radio__inp" type="radio" value="0" name="payment" checked="checked" /><span class="radio__check"></span><span class="radio__name">Яндекс.Деньги</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__inp" type="radio" value="1" name="payment" /><span class="radio__check"></span><span class="radio__name">WebMoney</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__inp" type="radio" value="2" name="payment" /><span class="radio__check"></span><span class="radio__name">Карта</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__inp" type="radio" value="2" name="payment" /><span class="radio__check"></span><span class="radio__name">Счет</span>
                                         </label>
                                         <button class="lk__btn btn btn_reg btn_wide" data-fancybox data-src="#thanks">Оплатить
                                         </button>
@@ -264,6 +353,16 @@
                         </label>
                         <div class="form__capcha">
                         </div>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="agree" />
+                            <p class="form__text form__text_check">Я принимаю условия <a href="#">оферты</a> и <a href="#">пользовательского соглашения</a>
+                            </p>
+                        </label>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="remember" />
+                            <p class="form__text form__text_check">Запомнить меня
+                            </p>
+                        </label>
                         <button class="btn btn_reg" type="submit">Зарегистрироваться
                         </button>
                     </form>
@@ -296,6 +395,15 @@
                     <a class="social__link social__link_vk" href="#"></a>
                     <a class="social__link social__link_fb" href="#"></a>
                     <a class="social__link social__link_tw" href="#"></a>
+                </div>
+                <div class="letsrock">
+                    <p>Разработано в -
+                        <a href="http://www.letsrock.pro/" target="_blank">
+                            <svg class="customClass" width="84" height="20">
+                                <use xlink:href="#letsrock"></use>
+                            </svg>
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>

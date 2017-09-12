@@ -7,7 +7,7 @@
         <title>Space Cloud</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <meta name="viewport" content="width=1170">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
@@ -15,6 +15,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="static/js/separate-js/libs.js"></script>
         <script>
@@ -60,13 +61,13 @@
                     </button>
                     <div class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            <li class="menu__item"><a class="menu__link" href="#economy">Экономия</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            <li class="menu__item"><a class="menu__link" href="#safety">Безопасность</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            <li class="menu__item"><a class="menu__link" href="#tariffs">Тарифы</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a>
                             </li>
                         </ul>
                     </div>
@@ -91,9 +92,11 @@
                 </p><a class="btn btn_strong btn_banner" href="#next">Дальше - больше</a>
             </div>
             <div class="banner__video-wrap">
-                <video class="banner__video" autoplay loop>
-                    <source src="banner.mp4" />
+                <video class="banner__video" autoplay loop muted>
+                    <source src="banner.mp4" type="video/mp4" />
                 </video>
+                <canvas class="canvas">
+                </canvas>
             </div>
             <button class="pause">
             </button>
@@ -158,7 +161,7 @@
                         <br>расходы. Облачная 1С от Space Cloud — способ получить отличный сервис
                         <br>и сэкономить на обслуживании.
                     </p>
-                    <div class="economy">
+                    <div class="economy economy_first">
                         <h3 class="economy__title">За что вы платите в первый месяц?
                                                         </h3>
                         <ul class="economy__blocks">
@@ -216,7 +219,7 @@
                         <h3 class="economy__title">Экономия в первый год аренды
                                                         </h3>
                         <div class="economy__circle circle">
-                            <div class="circle__numbers"><span class="circle__numbers-v">14 350 000 Р</span><span class="circle__numbers-t">экономии в год, из них</span><span class="circle__numbers-v">от 700 Р</span><span class="circle__numbers-t">за комплексные услуги <br>в месяц</span>
+                            <div class="circle__numbers"><span class="circle__numbers-v">14 350 000 <i class="fa fa-rub"></i></span><span class="circle__numbers-t">экономии в год, из них</span><span class="circle__numbers-v">от 700 <i class="fa fa-rub"></i></span><span class="circle__numbers-t">за комплексные услуги <br>в месяц</span>
                             </div>
                             <div class="circle__this">
                                 <svg id="donut-chart"></svg>
@@ -282,7 +285,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn btn_strong btn_ctr">Попробовать 15 дней бесплатно
+                        <button class="btn btn_strong btn_ctr" data-fancybox data-src="#reg">Попробовать 15 дней бесплатно
                         </button>
                     </div>
                 </div>
@@ -298,35 +301,39 @@
             </section>
             <section class="section">
                 <div class="section__inner">
-                    <h2 class="section__title">Одна облачная 1С для всех задач
-                                                  </h2>
-                    <p class="section__text">Бухгалтерский и управленческий учет, склад, логистика, финансы,
-                        <br>продажи или отчетность — в облачной 1С есть всё, что вам нужно.
-                    </p>
-                    <div class="section__content section__content_l"><span class="section__cap section__cap_multi">Хотите сдавать отчетность из 1С?<br>Включите «1С-Отчетность» <br>в списке сервисов.</span>
-                        <p class="section__text section__text_adv">Вы не переплачиваете за ненужные вам сервисы —
-                            <br>а включаете в личном кабинете только то,
-                            <br>что вам требуется.
+                    <div class="section__block section__block_report">
+                        <h2 class="section__title">Одна облачная 1С для всех задач
+                                                            </h2>
+                        <p class="section__text">Бухгалтерский и управленческий учет, склад, логистика, финансы,
+                            <br>продажи или отчетность — в облачной 1С есть всё, что вам нужно.
                         </p>
+                        <div class="section__content section__content_l"><span class="section__cap section__cap_multi">Хотите сдавать отчетность из 1С?<br>Включите «1С-Отчетность» <br>в списке сервисов.</span>
+                            <p class="section__text section__text_adv">Вы не переплачиваете за ненужные вам сервисы —
+                                <br>а включаете в личном кабинете только то,
+                                <br>что вам требуется.
+                            </p>
+                        </div>
+                        <div class="screen">
+                        </div>
                     </div>
-                    <div class="screen">
+                    <div class="section__block section__block_guarant">
+                        <h2 class="section__title">Space Cloud гарантирует
+                                                            </h2>
+                        <ul class="section__lst">
+                            <li class="section__lst-i section__lst-i_sup"><span class="section__cap">Команда поддержки 24/7</span>
+                                <p class="section__text section__text_adv">У нас собственный штат специалистов поддержки — вы получите решение в тот же день.
+                                </p>
+                            </li>
+                            <li class="section__lst-i section__lst-i_hard"><span class="section__cap">Диск без ограничений </span>
+                                <p class="section__text section__text_adv">Где другие сервисы дают 5 ГБ пространства на диске, <strong>мы даем 25 ГБ.</strong> Этого хватит этого хватит надолго.
+                                </p>
+                            </li>
+                            <li class="section__lst-i section__lst-i_qu"><span class="section__cap">Бесплатные <br>1С-консультации</span>
+                                <p class="section__text section__text_adv">Задавайте вопросы любой сложности — мы подскажем, как лучше поступить.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                    <h2 class="section__title">Space Cloud гарантирует
-                                                  </h2>
-                    <ul class="section__lst">
-                        <li class="section__lst-i section__lst-i_sup"><span class="section__cap">Команда поддержки 24/7</span>
-                            <p class="section__text section__text_adv">У нас собственный штат специалистов поддержки — вы получите решение в тот же день.
-                            </p>
-                        </li>
-                        <li class="section__lst-i section__lst-i_hard"><span class="section__cap">Диск без ограничений </span>
-                            <p class="section__text section__text_adv">Где другие сервисы дают 5 ГБ пространства на диске, <strong>мы даем 25 ГБ.</strong> Этого хватит этого хватит надолго.
-                            </p>
-                        </li>
-                        <li class="section__lst-i section__lst-i_qu"><span class="section__cap">Бесплатные <br>1С-консультации</span>
-                            <p class="section__text section__text_adv">Задавайте вопросы любой сложности — мы подскажем, как лучше поступить.
-                            </p>
-                        </li>
-                    </ul>
                 </div>
                 <div class="section__footer section__footer_f3">
                     <div class="section__footer-inner">
@@ -535,6 +542,16 @@
                         </label>
                         <div class="form__capcha">
                         </div>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="agree" />
+                            <p class="form__text form__text_check">Я принимаю условия <a href="#">оферты</a> и <a href="#">пользовательского соглашения</a>
+                            </p>
+                        </label>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="remember" />
+                            <p class="form__text form__text_check">Запомнить меня
+                            </p>
+                        </label>
                         <button class="btn btn_reg" type="submit">Зарегистрироваться
                         </button>
                     </form>
@@ -561,6 +578,15 @@
                     <a class="social__link social__link_vk" href="#"></a>
                     <a class="social__link social__link_fb" href="#"></a>
                     <a class="social__link social__link_tw" href="#"></a>
+                </div>
+                <div class="letsrock">
+                    <p>Разработано в -
+                        <a href="http://www.letsrock.pro/" target="_blank">
+                            <svg class="customClass" width="84" height="20">
+                                <use xlink:href="#letsrock"></use>
+                            </svg>
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>

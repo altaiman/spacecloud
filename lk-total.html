@@ -7,7 +7,7 @@
         <title>Space Cloud</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <meta name="viewport" content="width=1170">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
@@ -15,6 +15,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="static/js/separate-js/libs.js"></script>
         <script>
@@ -60,13 +61,13 @@
                     </button>
                     <div class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            <li class="menu__item"><a class="menu__link" href="#economy">Экономия</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            <li class="menu__item"><a class="menu__link" href="#safety">Безопасность</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            <li class="menu__item"><a class="menu__link" href="#tariffs">Тарифы</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a>
                             </li>
                         </ul>
                     </div>
@@ -95,35 +96,59 @@
                                 <div class="user__c">
                                     <div class="user__info">
                                         <h3 class="user__name">Михаил Иванов
-                                                                                              </h3>
-                                        <button class="user__edit">
+                                                                                                </h3>
+                                        <button class="edit">
                                         </button>
                                     </div>
-                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><span class="user__link">mikhailivanov@gmail.com</span>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="lk__info account">
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Ваш тариф:
+                                    </p>
+                                    <p class="account__cap account__cap_val"> <a class="account__link" href="#">Сатурн</a>
+                                        <button class="edit edit_s">
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Стоимость:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">1560 ₽/мес</a>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Активен до:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">2 апреля 2017г.</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lk__main">
                             <aside class="sidebar">
                                 <ul class="sidebar__list">
-                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="#">Обзор</a>
+                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="lk-total.html">Обзор</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="#">Пользователи</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="lk-profile.html">Мой профиль</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="#">Мой профиль</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="lk-finance.html">Финансы</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="#">Финансы</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="lk-users.html">Пользователи</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="#">Техподдержка</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление конфигурациями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="#">Обновление баз</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление опциями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="#">Управление опциями</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="lk-update.html">Обновление баз</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="#">Партнерам</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="lk-report.html">1С Отчетность</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="#">1С Отчетность</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="lk-support.html">Техподдержка</a>
+                                    </li>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="lk-partners.html">Партнерам</a>
                                     </li>
                                 </ul>
                             </aside>
@@ -138,7 +163,7 @@
                                                 </td>
                                                 <td class="table__cell table__cell_b"> <span class="table__option">Сатурн</span>
                                                 </td>
-                                                <td class="table__cell table__cell_b"><a class="table__link table__link_new" href="#">сменить тариф</a>
+                                                <td class="table__cell table__cell_b"><span>1000 ₽/мес</span>
                                                 </td>
                                             </tr>
                                             <tr class="table__row table__row_n">
@@ -152,7 +177,7 @@
                                             <tr class="table__row table__row_n">
                                                 <td class="table__cell table__cell_b">Колличество пользователей
                                                 </td>
-                                                <td class="table__cell table__cell_b"><span class="table__option">1 из 1</span>
+                                                <td class="table__cell table__cell_b"><a class="table__link">1 из 1</a>
                                                 </td>
                                                 <td class="table__cell table__cell_b">
                                                 </td>
@@ -182,66 +207,116 @@
                                     <div class="lk__block lk__block_total">
                                         <h3 class="lk__subtitle lk__subtitle_total">Подключенные конфигурации:
                                                                                                   </h3>
-                                        <div class="toggle"><span class="toggle__name">1С:Бухгалтерия 8 ПРОФ 3.0</span>
-                                            <div class="toggle__content">
-                                            </div>
-                                        </div>
-                                        <div class="toggle toggle_open"><span class="toggle__name">Дополнительные опции</span>
+                                        <div class="toggle"><span class="toggle__name">Конфигурации</span>
                                             <div class="toggle__content">
                                                 <table class="table table_info" border="0" cellspacing="0" cellpadding="0">
                                                     <tr class="table__row table__row_n">
-                                                        <td class="table__cell table__cell_name">Количество пользователей
+                                                        <td class="table__cell table__cell_name">Бухгалтерия
                                                         </td>
-                                                        <td class="table__cell table__cell_i">
-                                                            <label class="tariffs__count tariffs__count_s"><span class="tariffs__count-down"></span>
-                                                                <input class="tariffs__count-field" type="number" value="1" /><span class="tariffs__count-up"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="table__cell">700 Р/мес
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
                                                         </td>
                                                     </tr>
                                                     <tr class="table__row table__row_n">
-                                                        <td class="table__cell table__cell_name">Автопродление тарифа
+                                                        <td class="table__cell table__cell_name">Управление торговлей
                                                         </td>
-                                                        <td class="table__cell table__cell_i">
-                                                            <label class="rad rad_s">
-                                                                <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
-                                                            </label>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
                                                         </td>
-                                                        <td class="table__cell table__cell_i">
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Заработаная плата и управление персоналом
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Управление небольшой фирмой
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Розница
+                                                        </td>
+                                                        <td class="table__cell table__cell_i table__cell_status" data-status="1">в обработке
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Документооборот
+                                                        </td>
+                                                        <td class="table__cell table__cell_i table__cell_status" data-status="0">подключено
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Комплексная автоматизация
+                                                        </td>
+                                                        <td class="table__cell table__cell_i table__cell_status" data-status="0">подключено
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="toggle toggle_open"><span class="toggle__name">Опции</span>
+                                            <div class="toggle__content">
+                                                <table class="table table_info" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">1С-отчетность
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">от 3 900 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">1С-контрагент
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">4 800 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i table__cell_status" data-status="0">подключено
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">1С: Старт ЭДО
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">3 000 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i table__cell_status" data-status="1">в обработке
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">1С ПАРК риски
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">3 000 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Офисный пакет Microsoft Office
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">0 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row table__row_n">
+                                                        <td class="table__cell table__cell_name">Microsoft SQL Server
+                                                        </td>
+                                                        <td class="table__cell table__cell_i">440 ₽/мес
+                                                        </td>
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
                                                         </td>
                                                     </tr>
                                                     <tr class="table__row table__row_n">
                                                         <td class="table__cell table__cell_name">Ежемесячная отправка документов почтой
                                                         </td>
-                                                        <td class="table__cell table__cell_i">
-                                                            <label class="rad rad_s">
-                                                                <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
-                                                            </label>
+                                                        <td class="table__cell table__cell_i">50 ₽/мес
                                                         </td>
-                                                        <td class="table__cell table__cell_i">50 Р
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="table__row table__row_n">
-                                                        <td class="table__cell table__cell_name">
-                                                            <p class="table__text">Клиент-серверный вариант на базе MS SQL Serve (недоступно в тарифе «Меркурий» и «Сатурн»)
-                                                                <button class="btn btn_q" data-tip="Недоступно для тарифов меркурий и сатурн. Если Вам необходим этот сервис - повысьте тариф до «Юпитера»">
-                                                                </button>
-                                                            </p>
-                                                        </td>
-                                                        <td class="table__cell table__cell_i">
-                                                            <label class="rad rad_s">
-                                                                <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="table__cell table__cell_i">500 Р/мес
+                                                        <td class="table__cell table__cell_i"><a class="table__link" data-modal="options">оставить заявку</a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                                 <div class="toggle__buttons">
-                                                    <button class="btn btn_lk btn_wide">Отменить
-                                                    </button>
-                                                    <button class="btn btn_reg btn_wide">Сохранить
+                                                    <button class="btn btn_reg btn_wide" disabled>Сохранить
                                                     </button>
                                                 </div>
                                             </div>
@@ -289,9 +364,27 @@
                         </label>
                         <div class="form__capcha">
                         </div>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="agree" />
+                            <p class="form__text form__text_check">Я принимаю условия <a href="#">оферты</a> и <a href="#">пользовательского соглашения</a>
+                            </p>
+                        </label>
+                        <label class="form__lab form__lab_check">
+                            <input type="checkbox" value="1" name="remember" />
+                            <p class="form__text form__text_check">Запомнить меня
+                            </p>
+                        </label>
                         <button class="btn btn_reg" type="submit">Зарегистрироваться
                         </button>
                     </form>
+                </div>
+            </div>
+            <div class="modal modal_options" id="options">
+                <div class="modal__inner">
+                    <p class="modal__text">Необходимо указать e-mail в <a class="modal__link" href="lk-profile.html">профиле</a>!
+                    </p>
+                    <button class="modal__btn btn btn_strong" data-fancybox-close>ОК
+                    </button>
                 </div>
             </div>
         </div>
@@ -315,6 +408,15 @@
                     <a class="social__link social__link_vk" href="#"></a>
                     <a class="social__link social__link_fb" href="#"></a>
                     <a class="social__link social__link_tw" href="#"></a>
+                </div>
+                <div class="letsrock">
+                    <p>Разработано в -
+                        <a href="http://www.letsrock.pro/" target="_blank">
+                            <svg class="customClass" width="84" height="20">
+                                <use xlink:href="#letsrock"></use>
+                            </svg>
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
