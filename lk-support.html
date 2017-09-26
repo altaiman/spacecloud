@@ -15,7 +15,6 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="static/js/separate-js/libs.js"></script>
         <script>
@@ -61,13 +60,13 @@
                     </button>
                     <div class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#economy">Экономия</a>
+                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#safety">Безопасность</a>
+                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#tariffs">Тарифы</a>
+                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a>
+                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
                             </li>
                         </ul>
                     </div>
@@ -96,59 +95,35 @@
                                 <div class="user__c">
                                     <div class="user__info">
                                         <h3 class="user__name">Михаил Иванов
-                                                                                                </h3>
-                                        <button class="edit">
+                                                                                              </h3>
+                                        <button class="user__edit">
                                         </button>
                                     </div>
-                                    <div class="user__info"><span class="user__contract">договор No 256349</span><span class="user__link">mikhailivanov@gmail.com</span>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="lk__info account">
-                                <div class="account__line">
-                                    <p class="account__cap account__cap_line">Ваш тариф:
-                                    </p>
-                                    <p class="account__cap account__cap_val"> <a class="account__link" href="#">Сатурн</a>
-                                        <button class="edit edit_s">
-                                        </button>
-                                    </p>
-                                </div>
-                                <div class="account__line">
-                                    <p class="account__cap account__cap_line">Стоимость:
-                                    </p>
-                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">1560 ₽/мес</a>
-                                    </p>
-                                </div>
-                                <div class="account__line">
-                                    <p class="account__cap account__cap_line">Активен до:
-                                    </p>
-                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">2 апреля 2017г.</a>
-                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lk__main">
                             <aside class="sidebar">
                                 <ul class="sidebar__list">
-                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="lk-total.html">Обзор</a>
+                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="#">Обзор</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="lk-profile.html">Мой профиль</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="#">Мой профиль</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="lk-finance.html">Финансы</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="#">Финансы</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="lk-users.html">Пользователи</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="#">Пользователи</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление конфигурациями</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="#">Управление опциями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление опциями</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="#">Обновление баз</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="lk-update.html">Обновление баз</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="#">1С Отчетность</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="lk-report.html">1С Отчетность</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="#">Техподдержка</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="lk-support.html">Техподдержка</a>
-                                    </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="lk-partners.html">Партнерам</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="#">Партнерам</a>
                                     </li>
                                 </ul>
                             </aside>
@@ -176,8 +151,12 @@
                                             <label class="form__lab form__lab_file">
                                                 <input class="form__file" type="file" /><span class="form__link form__link_file">Прикрепить файл</span>
                                             </label><span class="form__name form__name_req">Обязательные поля</span>
-                                            <button class="btn btn_reg btn_wide" disabled>Сохранить
-                                            </button>
+                                            <div class="form__buttons form__buttons_support">
+                                                <button class="btn btn_lk btn_wide">Отменить
+                                                </button>
+                                                <button class="btn btn_reg btn_wide">Отправить
+                                                </button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -258,15 +237,6 @@
                     <a class="social__link social__link_vk" href="#"></a>
                     <a class="social__link social__link_fb" href="#"></a>
                     <a class="social__link social__link_tw" href="#"></a>
-                </div>
-                <div class="letsrock">
-                    <p>Разработано в -
-                        <a href="http://www.letsrock.pro/" target="_blank">
-                            <svg class="customClass" width="84" height="20">
-                                <use xlink:href="#letsrock"></use>
-                            </svg>
-                        </a>
-                    </p>
                 </div>
             </div>
         </footer>
