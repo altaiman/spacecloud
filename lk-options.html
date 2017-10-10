@@ -15,6 +15,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="static/js/separate-js/libs.js"></script>
         <script>
@@ -60,13 +61,13 @@
                     </button>
                     <div class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">Экономия</a>
+                            <li class="menu__item"><a class="menu__link" href="#economy">Экономия</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Безопасность</a>
+                            <li class="menu__item"><a class="menu__link" href="#safety">Безопасность</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Тарифы</a>
+                            <li class="menu__item"><a class="menu__link" href="#tariffs">Тарифы</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a>
+                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a>
                             </li>
                         </ul>
                     </div>
@@ -95,35 +96,59 @@
                                 <div class="user__c">
                                     <div class="user__info">
                                         <h3 class="user__name">Михаил Иванов
-                                                                                              </h3>
-                                        <button class="user__edit">
+                                                                                                </h3>
+                                        <button class="edit">
                                         </button>
                                     </div>
-                                    <div class="user__info"><span class="user__contract">договор No 256349</span><a class="user__link" href="mailto:mikhailivanov@gmail.com">mikhailivanov@gmail.com</a>
+                                    <div class="user__info"><span class="user__contract">договор No 256349</span><span class="user__link">mikhailivanov@gmail.com</span>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="lk__info account">
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Ваш тариф:
+                                    </p>
+                                    <p class="account__cap account__cap_val"> <a class="account__link" href="#">Сатурн</a>
+                                        <button class="edit edit_s">
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Стоимость:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">1560 ₽/мес</a>
+                                    </p>
+                                </div>
+                                <div class="account__line">
+                                    <p class="account__cap account__cap_line">Активен до:
+                                    </p>
+                                    <p class="account__cap account__cap_val"><a class="account__link" href="#">2 апреля 2017г.</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lk__main">
                             <aside class="sidebar">
                                 <ul class="sidebar__list">
-                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="#">Обзор</a>
+                                    <li class="sidebar__item sidebar__item_active"><a class="sidebar__link sidebar__link_overview" href="lk-total.html">Обзор</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="#">Мой профиль</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_profile" href="lk-profile.html">Мой профиль</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="#">Финансы</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_finance" href="lk-finance.html">Финансы</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="#">Пользователи</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_users" href="lk-users.html">Пользователи</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="#">Управление опциями</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление конфигурациями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="#">Обновление баз</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_options" href="lk-options.html">Управление опциями</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="#">1С Отчетность</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_update" href="lk-update.html">Обновление баз</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="#">Техподдержка</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_report" href="lk-report.html">1С Отчетность</a>
                                     </li>
-                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="#">Партнерам</a>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_support" href="lk-support.html">Техподдержка</a>
+                                    </li>
+                                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_partners" href="lk-partners.html">Партнерам</a>
                                     </li>
                                 </ul>
                             </aside>
@@ -132,18 +157,12 @@
                                     <h2 class="lk__title">Управление опциями
                                                                                         </h2>
                                     <table class="table">
-                                        <tr class="table__row table__row_head">
-                                            <th class="table__cell table__cell_head">Основные
-                                            </th>
-                                            <th class="table__cell table__cell_head" colspan="2">Цена
-                                            </th>
-                                        </tr>
                                         <tr class="table__row">
                                             <td class="table__cell">1С-отчетность
                                             </td>
                                             <td class="table__cell">от <strong>3900 Р</strong>/год
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -151,7 +170,7 @@
                                             </td>
                                             <td class="table__cell"><strong>4800 Р</strong>/год
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -159,7 +178,7 @@
                                             </td>
                                             <td class="table__cell"><strong>3000 Р</strong>/год
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -167,19 +186,15 @@
                                             </td>
                                             <td class="table__cell"><strong>3000 Р</strong>/год
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
-                                        </tr>
-                                        <tr class="table__row table__row_head">
-                                            <th class="table__cell table__cell_head" colspan="3">Дополнительные
-                                            </th>
                                         </tr>
                                         <tr class="table__row">
                                             <td class="table__cell">Офисный пакет Microsoft Office
                                             </td>
                                             <td class="table__cell"><strong>0 Р</strong>/мес
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-fancybox="data-fancybox" data-src="#users">пользователи</a><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -187,7 +202,15 @@
                                             </td>
                                             <td class="table__cell"><strong>440 Р</strong>/мес
                                             </td>
-                                            <td class="table__cell"><a class="table__link" href="#">оставить заявку</a>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">Ежемесячная отправка документов почтой
+                                            </td>
+                                            <td class="table__cell"><strong>50 Р</strong>/мес
+                                            </td>
+                                            <td class="table__cell"><a class="table__link" data-modal="options">оставить заявку</a>
                                             </td>
                                         </tr>
                                     </table>
@@ -250,6 +273,49 @@
                     </form>
                 </div>
             </div>
+            <div class="modal modal_users" id="users">
+                <div class="modal__inner">
+                    <table class="table">
+                        <tr class="table__row_">
+                            <td class="table__cell">Пользователь 1
+                            </td>
+                            <td class="table__cell">
+                                <label class="rad rad_s">
+                                    <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="table__row_">
+                            <td class="table__cell">Пользователь 2
+                            </td>
+                            <td class="table__cell">
+                                <label class="rad rad_s">
+                                    <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="table__row_">
+                            <td class="table__cell">Пользователь 3
+                            </td>
+                            <td class="table__cell">
+                                <label class="rad rad_s">
+                                    <input class="rad__btn" type="checkbox" /><span class="rad__custom"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="modal__btn btn btn_strong">Сохранить
+                    </button>
+                </div>
+            </div>
+            <div class="modal modal_options" id="options">
+                <div class="modal__inner">
+                    <p class="modal__text">Необходимо указать e-mail в <a class="modal__link" href="lk-profile.html">профиле</a>!
+                    </p>
+                    <button class="modal__btn btn btn_strong" data-fancybox-close>ОК
+                    </button>
+                </div>
+            </div>
         </div>
         <footer class="page__footer footer">
             <div class="footer__inner">
@@ -271,6 +337,15 @@
                     <a class="social__link social__link_vk" href="#"></a>
                     <a class="social__link social__link_fb" href="#"></a>
                     <a class="social__link social__link_tw" href="#"></a>
+                </div>
+                <div class="letsrock">
+                    <p>Разработано в -
+                        <a href="http://www.letsrock.pro/" target="_blank">
+                            <svg class="customClass" width="84" height="20">
+                                <use xlink:href="#letsrock"></use>
+                            </svg>
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
